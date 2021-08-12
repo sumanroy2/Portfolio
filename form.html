@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="description" content="Create Form">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="author" content="Suman Chandra Roy(Group-3)">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/7515ede853.js" crossorigin="anonymous"></script> 
+	
+	<title>Create Form</title>
+	<link rel="stylesheet" type="text/css" href="form.css">
+</head>
+<body>
+<div class="menu">
+	<ul>
+		<li><a href="table.html"><i class="fas fa-home"></i>Home </a></li>
+		<li><a href="About us.html"><i class="fas fa-address-card"></i>About Us</a></li>
+		<li><i class="fas fa-sign-in-alt"></i> <a class="Active" href="form.html">Login </a></li>
+		<li><a href="Contact.html"><i class="fas fa-phone"></i> Contact </a></li>
+		<li><a href="Gallery.html"><i class="fas fa-image"></i> Gallery </a></li>
+	</ul>
+</div>
+
+
+
+	<div class="fform">
+		<h1>Fill Up the Form</h1>
+		<table>
+			<tr>
+			<td>	
+
+		<form>
+			<label for="UserName">Username:</label>
+			<input type="text" id="UserName" class="demo" name="username"placeholder="Enput your Username"required>
+			<label for="pwd">Password:</label>
+			<input type="Password"class="demo" name="password" id="pwd"placeholder="Enter 10 several disit"pattern="[0-9]{10}"><br><br>
+
+			<label for="pn">Phone Number:</label>
+			<input type="phone"class="demo" name="phone"id="pn"placeholder="Enter Phone Number of 11 disit"pattern="[0-9]{11}"><br><br>
+
+			<label>Date of Birth</label>
+			<input type="date" name="date"value="date" class="date">
+			<label>Study?</label>
+			<input type="text"class="stu" name=""placeholder="University Name" required><br><br>
+			<ul for="cmt"><u><b>Comment section:</b></u></label><br>
+				<textarea name="comment" id="cmt" cols="30" rows="10">Enter your valuable comment </textarea>
+
+			<label>Give Your Photos:</label>
+			<input type="file" name="file"value="file"> <br><br>
+
+			<label>Gender:</label>
+			<input type="radio" name="Gender" value="Male">Male
+			<input type="radio" name="Gender" value="Female">Female <br><br>
+
+			<label>Religion:</label>
+			<input type="checkbox" name="Religion"value="Hindu">Hindu
+			<input type="checkbox" name="Religion"value="Muslim">Muslim
+			<input type="checkbox" name="Religion"value="Hindu">Christian <br><br>
+			
+			<label>Choose Your Favourite Subject:</label>
+			<select id="otn">
+				<option>Physics</option>
+				<option>Chemistry</option>
+				<option>Mathematice</option>
+				<option>Architecture</option>
+				<option>Agriculture</option>
+				<option>DVM</option>
+				<option>BBA</option>
+				<option>Art's</option>
+				<option>Other</option>
+			</select>
+
+			<input type="button"onclick="myfunction()" name="button"class="btn"value="Submit">
+			<input type="submit" class="btn"value="Reset">
+		</form>
+	</td>
+			</tr>
+		</table>
+<script>
+	function myfunction(){
+		var x=document.querySelector("#UserName")
+		// var x=document.getElementById("UserName") or
+		if (x.value == "") {
+			alert("Enter the form");
+			return false;
+		}
+		else{
+			alert("Successfull");
+			return true;
+		}
+	}
+</script>
+	
+			
+	</div>
+</body>
+</html>

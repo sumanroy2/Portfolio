@@ -1,0 +1,141 @@
+.menu{
+	background-color:lightblue;
+	text-align:left;
+	/*padding: 12px;
+	margin: 12px;*/
+	position: sticky;
+	top: 0;
+	
+}
+.menu ul{
+	/*background-color: #aaffdd;
+*/	text-align: left;
+	padding: 0;
+	margin: 0;
+	
+}
+.menu ul li{
+	display: inline-block;
+/*	float: left;
+	Here we can take float: left;. But, as a result, background-color: we not see.; So here we will use display: inline-block*/
+	/*width:120px;*/
+	list-style:none;
+	padding: 12px;
+	text-position:right;
+/*	box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.8);*/
+	transition-property: background-color,box-shadow;
+	transition-duration: 1s;
+}
+
+.menu ul li:hover{
+	
+	color:white;
+	background-color:#cbc0ff80;
+	box-shadow: 4px 8px 16px 0px rgba(0, 0, 0, 0.5);
+}
+.menu ul li a{
+	text-decoration:none;
+	padding: 12px;
+	text-align:center;
+	
+}
+.Active{
+
+	background-color:#cbc0ff;
+	box-shadow: 4px 8px 16px 0px rgba(0, 0, 0, 0.5);
+	
+}
+/************************************
+		form
+***********************************/
+
+
+td{
+	text-align: left;
+	border:4px solid skyblue;
+	padding:12px;
+	background-color: #ffdd;
+}
+h1{
+	
+	margin-bottom: 12px;
+	padding: 12px;
+}
+.btn{
+	color: white;
+	background-color: black;
+	padding: 12px;
+	border-radius: 12px;
+	
+	box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.5) ;
+
+}
+.btn:hover{
+	color: white;
+	background-color: blueviolet;
+	box-shadow: 4px 8px 16px 0px rgba(0, 0, 0, 0.5) ;
+
+
+}
+#UserName{
+	color: black;
+	border:2px solid burlywood;
+	font-size: 16px;
+	font-family: sans-serif;
+	padding: 9px;
+	border-radius: 9px;
+	margin:0px 18px 0px 8px;
+}
+#cmt{
+	background-color: darkgray;
+	color:black;
+	font-size: 16px;
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#pwd{
+	color:black;
+	font-size: 16px;
+/*	background-color:rgb(18, 77, 77);*/
+	padding: 12px;
+	border-radius: 12px;
+	border:2px solid burlywood;
+	margin: 0px 0px 0px 9px;
+
+}
+#pn{
+	color:black;
+	font-size: 16px;
+	/*background-color: rgb(18, 77, 77);*/
+	padding: 12px;
+	border-radius: 12px;
+	border:2px solid burlywood;
+	margin: 0px 0px 0px 9px;
+}
+.date{
+	color:black;
+	/*background-color: rgb(73, 47, 13);*/
+	padding: 12px;
+	border-radius: 8px;
+	margin:0px 9px 0px 9px;
+	font-size: 16px;
+	border:2px solid burlywood;
+}
+.stu{
+	color: black;
+	border:2px solid burlywood;
+	font-size: 16px;
+	font-family: sans-serif;
+	padding: 9px;
+	border-radius: 9px;
+	margin:0px 18px 0px 8px;
+}
+#otn{
+	color:white;
+	background-color:rgb(46, 24, 24);
+	padding: 12px;
+	border-radius: 9px;
+	margin: 6px;
+	text-align: center;
+	font-size: 15px;
+
+}

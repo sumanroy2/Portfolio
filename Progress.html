@@ -1,0 +1,102 @@
+<html>
+<head>
+	<style>
+	h1{
+		font-weight:bold;
+		font-size:18px;
+		font-family:sans-sarif;
+	}
+
+		.progress{
+		  width:100%;
+		  height:44px;
+		  padding:8px 0px 8px 0px;
+		  font-weight:bold;
+		  background-color:#135b5b;
+		 
+		  text-align:center;
+		  border-radius:12px;
+		  position:relative;
+		  
+		}
+		.pro1{
+			
+			width:70%;
+			text-align:center;
+			font-size:18px;
+			background-image:linear-gradient(90deg,red,blue,black,yellow);
+			height:100%;
+			border-radius:12px 0px 0px 12px;
+			vertical-align:center;
+			position:absolute;
+			left:0;
+			top:0;
+			animation:pro1 4s infinite alternate-reverse;
+		}
+		@keyframes pro1{
+			0%{
+				background-image:linear-gradient(90deg,red,yellow,skyblue,green);
+			}
+			25%{
+				background-image:linear-gradient(90deg,green,red,yellow,skyblue);
+			}
+			50%{
+				background-image:linear-gradient(90deg,skyblue,green,red,yellow);
+			}
+			75%{
+				background-image:linear-gradient(90deg,yellow,skyblue,green,red);
+			}
+			100%{
+				background-image:linear-gradient(90deg,red,yellow,skyblue,green);
+			}
+		}
+		
+		.pro2{
+			width:20%;
+			height:100%;
+			text-align:center;
+			border-radius:12px 0px 0px 12px;
+			
+			position:absolute;
+			top:0;
+			left:0;
+			animation:background-image 3s infinite alternate-reverse;
+		}
+		@keyframes background-image{
+			0%{
+				background-image:radial-gradient(red,yellow,skyblue,green);
+			}
+			25%{
+				background-image:radial-gradient(green,red,yellow,skyblue);
+			}
+			50%{
+				background-image:radial-gradient(skyblue,green,red,yellow);
+			}
+			75%{
+				background-image:radial-gradient(yellow,skyblue,green,red);
+			}
+			100%{
+				background-image:radial-gradient(red,yellow,skyblue,green);
+			}
+		}
+		
+	</style>
+</head>
+	<body>
+	<h1>Education Skill of Web design</h1>
+		<div class="progress">
+			<div class="pro1">
+				<p>70% complate</p>
+			</div>
+			
+		</div>
+		<br><br>
+		<h1>Skill of Programming</h1>
+		<div class="progress">
+			<div class="pro2">
+				<p>20% complate</p>
+			</div>
+			
+		</div>
+	</body>
+</html>

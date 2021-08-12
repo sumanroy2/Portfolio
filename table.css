@@ -1,0 +1,331 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: boder-box;
+}
+
+.portfolio_table{
+		width: 100%;
+		border-collapse: collapse;
+		padding: 0px;
+}
+
+td{
+	
+	padding: 0px;
+	margin: 0px;
+/*	border: 2px solid grey;*/
+
+}
+
+
+/*.logo{
+	width: 100%;
+	height: 70px;
+}*/
+.ban{
+	height: 90px;
+	width: 100%;
+	
+}
+
+/********************************************
+		Menu bar 
+*********************************************/
+ .Menu{
+ /*	background-color: #ADD8E6;*/
+ 	position: sticky;
+ 	top: 0;
+ }
+.menu{
+	/*background-color:lightblue;
+	text-align:left;
+	padding: 12px;
+	margin: 12px;*/
+	
+}
+.menu ul{
+	/*background-color: #aaffdd;
+*/	text-align: left;
+	padding: 0;
+	margin: 0;
+	
+}
+.menu ul li{
+	display: inline-block;
+/*	float: left;
+	Here we can take float: left;. But, as a result, background-color: we not see.; So here we will use display: inline-block*/
+	width:120px;
+	list-style:none;
+	padding: 12px;
+	text-position:right;
+/*	box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.8);*/
+	transition-property: background-color,box-shadow;
+	transition-duration: 1s;
+	border-right: 4px solid white;
+	border-radius: 0px 30px 0px 30px;
+	border-bottom: 4px solid #daceb8;
+}
+.menu ul li:last child{
+	border-right: none;
+}
+
+.menu ul li:hover{
+	
+	color:white;
+	/*background-color:#cbc0ff80;*/
+	box-shadow: 4px 8px 16px 0px rgba(0, 0, 0, 0.5);
+}
+.menu ul li a{
+	text-decoration:none;
+	padding: 6px;
+	text-align:center;
+
+	
+}
+.Active{
+	background-color:#cbc0ff;
+	box-shadow: 4px 8px 16px 0px rgba(0, 0, 0, 0.5);
+	
+}
+.Active:hover{
+	background-color: #a194e4;
+}
+.animation{
+	display: inline-block;
+	background-color: #a194e4;
+	border-radius: 0px 30px 0px 30px;
+	height: 12px;
+	margin-right: 12px;
+	transition: all 0.8s;
+}
+.animation:hover{
+	height: 43px;
+
+}
+
+/****************************************
+ * Searh Box
+ ***************************************/
+.search_box{
+	width: 200px;
+	padding: 12px;
+	background-color:#4130ff2D ;
+	border-radius: 12px;
+	display: flex;
+	align-items: center;
+	border: 2px solid grey;
+	height: 18px;
+	box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.8);
+	transition-property: background-color,box-shadow;
+	transition-duration: 1s;
+
+
+}
+.search_box>i{
+	color: black;
+	font-size: 15px;
+
+}
+.search_box>input{
+	color: black;
+	background-color: #3930ff00;
+	flex: 1;
+	height: 20px;
+	border: none;
+	outline: none;
+	padding-left: 12px;
+
+}
+.search_box:hover{
+	background-color: #2AC67C;
+	box-shadow: 4px 8px 16px 0px rgba(0, 0, 0, 0.5);
+	
+}
+
+/*****************************
+		Left Side bar
+**************************/
+tr:nth-child(3){ 
+	/*This is pseudo Class */
+	/*vertical-align: top; */ /* এটার সাহায় td সব লেখা প্রথম থেকে শুরু হবে */
+}
+
+/*******************************
+		Progress 
+*******************************/
+
+		.progress{
+		  width:100%;
+		  height:44px;
+		  padding:8px 0px 8px 0px;
+		  font-weight:bold;
+		  background-color:#135b5b;
+		 
+		  text-align:center;
+		  border-radius:12px;
+		  position:relative;
+		  
+		}
+		.pro1{
+			
+			width:70%;
+			text-align:center;
+			font-size:18px;
+			background-image:linear-gradient(90deg,red,blue,black,yellow);
+			height:100%;
+			border-radius:12px 0px 0px 12px;
+			vertical-align:center;
+			position:absolute;
+			left:0;
+			top:0;
+			animation:pro1 2s infinite alternate-reverse;
+		}
+		@keyframes pro1{
+			0%{
+				background-image:linear-gradient(90deg,red,yellow,skyblue,green);
+			}
+			25%{
+				background-image:linear-gradient(90deg,green,red,yellow,skyblue);
+			}
+			50%{
+				background-image:linear-gradient(90deg,skyblue,green,red,yellow);
+			}
+			75%{
+				background-image:linear-gradient(90deg,yellow,skyblue,green,red);
+			}
+			100%{
+				background-image:linear-gradient(90deg,red,yellow,skyblue,green);
+			}
+		}
+		
+		.pro2{
+			width:20%;
+			height:100%;
+			text-align:center;
+			border-radius:12px 0px 0px 12px;
+			
+			position:absolute;
+			top:0;
+			left:0;
+			animation:background-image 3s infinite alternate-reverse;
+		}
+		@keyframes background-image{
+			0%{
+				background-image:radial-gradient(red,yellow,skyblue,green);
+			}
+			25%{
+				background-image:radial-gradient(green,red,yellow,skyblue);
+			}
+			50%{
+				background-image:radial-gradient(skyblue,green,red,yellow);
+			}
+			75%{
+				background-image:radial-gradient(yellow,skyblue,green,red);
+			}
+			100%{
+				background-image:radial-gradient(red,yellow,skyblue,green);
+			}
+		}
+
+/*******************************
+		Read more
+*******************************/
+#more{
+	display: none;
+}
+#myBtn{
+	color: black;
+	background-color: #ffdd;
+	padding: 12px;
+	margin: 12px;
+	border-radius: 12px;
+	box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.8);
+	transition-property: background-color,box-shadow;
+	transition-duration: 1s;
+
+}
+#myBtn:hover{
+	background-color: #2AC67C;
+	box-shadow: 4px 8px 16px 0px rgba(0, 0, 0, 0.5);
+	
+}
+.Overflow_p{
+	color: black;
+	/*background-color: #aaddff;
+	border: 2px solid grey;*/
+	height: 200px;
+	overflow: scroll;
+}
+/*.Content img{
+	width: 50%;
+	display: block;
+	opacity: 0.4;
+	transition: 1s;
+}
+.Content img:hover{
+	opacity: 1;
+}*/
+
+/*************************************
+		typewrite
+***********************************/
+.typewrite_div{
+	background-color: #aff;
+	display: inline-block;
+	padding: 13px;
+	margin: 8px;
+}
+.typewrite{
+	font-size: 28px;
+	
+	width: 0ch;
+	overflow: hidden;
+	white-space: nowrap;
+	border-right: 3px solid black;
+	animation: text 12s infinite;
+}
+@keyframes text{
+	0%{
+		width: 0ch;
+
+	}
+	50%{
+		width: 26ch;
+	}
+}
+
+/*************************************
+		Footer
+***********************************/
+.Footer{
+	background-color:#303841 ;
+	text-align: center;
+	width: 100%;
+	height: 300px;
+	padding: 0;
+	margin: 0;
+}
+.custom{
+	text-align: center;
+	margin-bottom: 12px;
+	padding-bottom: 22px;
+	color: #ddad;
+}
+.review{
+	padding: 8px;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 0px 18px;
+	color: black;
+
+}
+.review>div{
+	background-color: #aadd;
+}
+.review img{
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	padding: 12px;
+}

@@ -1,0 +1,127 @@
+*{
+
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/******************************
+	Menubar
+****************************/
+.menu_bar{
+	position: sticky;
+	top: 0;
+	/*padding: 12px;*/
+	display: block;
+	z-index: 9999;
+/* If background-image give must be include z-index , Otherwise your background image have hover*/
+}
+.menu{
+	list-style-type: none;
+	background-color: #31302B;
+
+	padding-top: 22px;
+	padding-bottom: 39px;
+/*	overflow: auto;
+	margin: 0;
+	display: inline-flex;*/
+}
+
+.menu li{
+	color: red;
+	
+	float: left;
+	
+}
+.menu li a{
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	padding: 22px;
+	transition-duration: 2s;
+	transition-property: background-color;
+}
+
+.menu li a:hover{
+	background-color: #cbc0ff80;
+
+}
+.menu li a i{
+	font-size: 15px;
+	padding-right: 6px;
+}
+.Active{
+	background-color:#cbc0ff;
+
+}
+/****************************
+		Contact
+****************************/
+
+.Contact{
+	color: black;
+	font-weight: bold;
+	list-style-type: none;
+
+
+}
+.Contact li{
+	
+	float: left;
+	padding: 22px;
+
+	background-color: #ddff;
+	
+}
+.Contact i{
+	margin-right: 4px;
+	font-size: 16px;
+	border-radius: 50%;
+	border: 2px solid black;
+	padding: 8px;
+}
+.Contact i: hover{
+	background-color: white;
+}
+.Contact a{
+	text-decoration: none;
+	padding: 12px;
+
+	/*box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, .4);*/
+}
+.Contact li:hover{
+	background-color: #0aa;
+	box-shadow: 4px 8px 16px 0px rgba(0, 0, 0, .4);
+	transition: all 1s;
+}
+
+img{
+
+	width: 100%;
+	display: block;
+	opacity: 0.4;
+	transition: all 1s;
+}
+img:hover{
+	opacity: 1;
+}
+.Container{
+/*	margin: 12px;
+	padding: 12px;
+*/
+	width: 100%;
+	box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, .4);
+	transition: all 1s;
+	height: 100px;
+	position: relative;
+	text-align: center;
+}
+.Container:hover{
+	box-shadow: 4px 8px 16px 0px rgba(0, 0, 0, .4);
+
+}
+
+.Contact_div{
+	position: absolute;
+	top: calc(50%);
+}
